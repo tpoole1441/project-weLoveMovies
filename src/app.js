@@ -10,6 +10,7 @@ const reviewsRouter = require("./reviews/reviews.router");
 const theatersRouter = require("./theaters/theaters.router");
 
 app.use(cors());
+app.options("*", cors());
 app.use(express.json());
 
 app.use("/movies", moviesRouter);
